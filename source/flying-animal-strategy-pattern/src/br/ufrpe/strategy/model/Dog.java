@@ -8,12 +8,6 @@ public class Dog extends Animal {
 
 	}
 
-	public Dog() {
-
-		setSound("Bark");
-
-	}
-
 	@Override
 	public String fly() {
 		return "I can't fly";
