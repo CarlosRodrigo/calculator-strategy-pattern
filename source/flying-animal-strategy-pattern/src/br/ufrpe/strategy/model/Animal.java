@@ -22,6 +22,10 @@ public abstract class Animal {
 	public void setSound(String sound) {
 		this.sound = sound;
 	}
+	
+	public void setFlyBehavior(IFlyBehavior flyBehavior) {
+		this.flyBehavior = flyBehavior;
+	}
 
 	public String performFly() {
 		return flyBehavior.fly();

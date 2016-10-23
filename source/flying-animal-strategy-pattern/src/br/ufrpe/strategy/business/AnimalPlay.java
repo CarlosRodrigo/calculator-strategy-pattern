@@ -3,6 +3,7 @@ package br.ufrpe.strategy.business;
 import br.ufrpe.strategy.model.Animal;
 import br.ufrpe.strategy.model.Bird;
 import br.ufrpe.strategy.model.Dog;
+import br.ufrpe.strategy.model.FlyRocketPowered;
 
 public class AnimalPlay{
 	
@@ -15,6 +16,9 @@ public class AnimalPlay{
 		
 		System.out.println("Bird: " + bird.performFly());
 		
+		bird.setFlyBehavior(new FlyRocketPowered());
+		
+		System.out.println("Bird: " + bird.performFly());
 	}
 	
 }
