@@ -1,10 +1,12 @@
 package br.ufrpe.strategy.model;
 
-public class Animal {
+public abstract class Animal {
 
 	private String name;
 	private String sound;
 
+	protected IFlyBehavior flyBehavior;
+	
 	public String getName() {
 		return name;
 	}
@@ -21,8 +23,8 @@ public class Animal {
 		this.sound = sound;
 	}
 
-	public String fly() {
-		return "I'm flying";
+	public String performFly() {
+		return flyBehavior.fly();
 	}
 
 }

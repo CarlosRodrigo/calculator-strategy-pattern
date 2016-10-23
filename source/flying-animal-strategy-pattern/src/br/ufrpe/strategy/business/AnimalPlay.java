@@ -11,9 +11,9 @@ public class AnimalPlay{
 		Animal dog = new Dog();
 		Animal bird = new Bird();
 		
-		System.out.println("Dog: " + dog.fly());
+		System.out.println("Dog: " + dog.performFly());
 		
-		System.out.println("Bird: " + bird.fly());
+		System.out.println("Bird: " + bird.performFly());
 		
 	}
 	
