@@ -1,6 +1,6 @@
 package br.ufrpe.model;
 
-public class Minus extends Operator {
+public class Minus implements ICalculate {
 
 	@Override
 	public double calculate(double a, double b) {

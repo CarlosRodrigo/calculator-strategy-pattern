@@ -1,6 +1,10 @@
 package br.ufrpe.business;
 
 import br.ufrpe.model.Calculator;
+import br.ufrpe.model.Divide;
+import br.ufrpe.model.Minus;
+import br.ufrpe.model.Multiply;
+import br.ufrpe.model.Plus;
 
 public class CalculatorPlay {
 
@@ -10,13 +14,17 @@ public class CalculatorPlay {
 		double a = 4;
 		double b = 3;
 		
-		System.out.println(a + " + " + b  +" = " + calculator.plus(a, b));
+		calculator.setCalculate(new Plus());
+		System.out.println(a + " + " + b  +" = " + calculator.calculate(a, b));
 		
-		System.out.println(a + " - " + b  +" = " + calculator.minus(a, b));
+		calculator.setCalculate(new Minus());
+		System.out.println(a + " - " + b  +" = " + calculator.calculate(a, b));
 		
-		System.out.println(a + " * " + b  +" = " + calculator.multiply(a, b));
+		calculator.setCalculate(new Multiply());
+		System.out.println(a + " * " + b  +" = " + calculator.calculate(a, b));
 		
-		System.out.println(a + " / " + b  +" = " + calculator.divide(a, b));
+		calculator.setCalculate(new Divide());
+		System.out.println(a + " / " + b  +" = " + calculator.calculate(a, b));
 	}
 	
 }
